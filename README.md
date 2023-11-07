@@ -10,7 +10,7 @@ There is a new website called Flatapets dedicated to helping pets find new homes
 
 In our React application, the data about the Pets is in the `db.json` file. This file will mimic an API that follows RESTful conventions.
 
-Make sure to open [http://localhost:4000/pets] (http://localhost:4000/pets) in the browser to verify that your backend is working before you proceed!
+Make sure to open [http://localhost:4000/pets](http://localhost:4000/pets) in the browser to verify that your backend is working before you proceed!
 
 ## What You Already Have
 
