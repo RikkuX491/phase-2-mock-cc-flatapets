@@ -1,4 +1,5 @@
-function SearchBar(){
+function SearchBar({updateSearchText}){
+
     return (
         <div className="searchbar">
             <label htmlFor="search">Search Pets:</label>
@@ -6,6 +7,7 @@ function SearchBar(){
                 type="text"
                 id="search"
                 placeholder="Type a name to search..."
+                onChange={updateSearchText}
             />
         </div>
     )

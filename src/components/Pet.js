@@ -1,14 +1,24 @@
-function Pet(){    
+import {useState} from 'react'
+
+function Pet({pet}){
+
+    const [displayName, setDisplayName] = useState(true)
+    
+    function toggleDisplayName(){
+        setDisplayName(!displayName)
+    }
+    
     return (
         <li className="pet">
             <img
-                src={"RENDER IMAGE"}
-                alt={"RENDER PET NAME"}
+                src={pet.image}
+                alt={pet.name}
+                onClick={toggleDisplayName}
             />
-            <h4>{"CONDITIONALLY RENDER NAME OR ANIMAL TYPE"}</h4>
+            <h4>{displayName ? pet.name : pet.animal_type}</h4>
             <p>
                 {
-                    "CONDITIONALLY RENDER WHETHER THE PET IS FROM A PET SHOP OR FROM THE WILD"
+                    pet.fromPetShop ? "From a Pet Shop" : "From the wild"
                 }
             </p>
         </li>
