@@ -25,3 +25,5 @@ As a user, I should be able to:
 - See list of pets on the page, using the `Pet` component. The `Pet` component should display the pet's image, name, and conditionally render whether it is from a pet shop or from the wild. If the pet is from a pet shop, the component should say "From a Pet Shop", otherwise it should say "From the wild".
 - Click on the image of the pet in the `Pet` component and see the animal_type in place of the name. If I click on the image again, the animal_type should again be replaced with the name. If I click on another pet's image, it toggles that pet's name independent of any other pet's.
 - Type in the `SearchBar` component and see the list of pets whose name or animal_type match the text in the search bar. If there's no text in the search bar, all the pets should be rendered.
+
+![Flatapets core deliverables](demos/flatapets-core-deliverables.png)
